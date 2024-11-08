@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Small Business Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <!-- Header Section -->
+    <header class="dashboard-header">
+      <h1>Business Dashboard</h1>
+    </header>
+
+    <!-- Metrics Section -->
+    <section class="metrics-grid">
+      <!-- Daily Revenue (Line Chart) -->
+      <div class="metric-card" id="daily-revenue">
+        <h2>Daily Revenue</h2>
+        <canvas id="revenueChart"></canvas>
+      </div>
+      <!-- Gross Profit Margin (Gauge Chart) -->
+      <div class="metric-card" id="gross-profit">
+        <h2>Gross Profit Margin</h2>
+        <canvas id="profitGauge"></canvas>
+      </div>
+      <!-- Operating Expenses (Bar Chart) -->
+      <div class="metric-card" id="operating-expenses">
+        <h2>Operating Expenses</h2>
+        <canvas id="expensesChart"></canvas>
+      </div>
+      <!-- Inventory Turnover (Donut Chart) -->
+      <div class="metric-card" id="inventory-turnover">
+        <h2>Inventory Turnover</h2>
+        <canvas id="inventoryChart"></canvas>
+      </div>
+      <!-- Accounts Receivable Aging (Heat Map) -->
+      <div class="metric-card" id="receivable-aging">
+        <h2>Accounts Receivable Aging</h2>
+        <canvas id="agingHeatMap"></canvas>
+      </div>
+      <!-- Net Profit Margin (Percentage Display) -->
+      <div class="metric-card" id="net-profit-margin">
+        <h2>Net Profit Margin</h2>
+        <div class="percentage-display">25%</div>
+      </div>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts.js"></script>
+</body>
+</html>
